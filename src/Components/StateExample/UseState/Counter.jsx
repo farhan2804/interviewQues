@@ -5,7 +5,7 @@ const Counter = () => {
 
   return (
     <>
-      <h1> Count value is {data}</h1>
+      <h1> Count value is  {data}</h1>
       <button onClick={() => setData(data + 1)}>+</button>
       <button onClick={() => setData(data - 1)}>-</button>
     </>
