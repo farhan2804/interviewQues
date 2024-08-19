@@ -1,0 +1,70 @@
+/* Accordion.css */
+
+/* Container styling */
+.accordionContainer {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Section styling */
+  .sec {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sec:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Heading styling */
+  .sec h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  /* Button styling */
+  .sec button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+  }
+  
+  .sec button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Paragraph (SubData) styling */
+  .sec p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* First and last section specific styling */
+  .sec:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .sec:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+  }
+  
