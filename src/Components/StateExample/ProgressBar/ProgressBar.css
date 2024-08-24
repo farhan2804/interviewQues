@@ -1,0 +1,25 @@
+h1{
+    text-align:center;
+}
+
+.container{
+     display:flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-direction: column;
+     border:1px solid black;
+     border-radius: 50px;
+     
+}
+
+span{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     height:30px;
+     background-color: green;
+     border-radius: 50px;
+     color:white;
+}
+
+
