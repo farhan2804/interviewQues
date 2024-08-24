@@ -1,0 +1,22 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ #starButton {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .unClicked {
+    color: #ccc; /* Default color */
+  }
+  
+  .hovered {
+    color: gold; /* Hover and selected color */
+  }
+  
