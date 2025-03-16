@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-const ChildA = () => {
-  return (
-    <div>ChildA</div>
-  )
-}
+// const ChildA = () => {
+//   return (
+//     <div>ChildA</div>
+//   )
+// }
 
-export default ChildA
+// export default ChildA

@@ -1,0 +1,22 @@
+// @mixin button($bg-color,$padding) {
+//   background-color: $bg-color;
+//   padding:$padding;
+//   color:aliceblue;
+//   font-family: cursive;
+// }
+
+
+// .primary-btn {
+//   @include button(blue,10px 20px);
+
+// }
+// .secondary-btn {
+//   @include button (gray,15px 20px);
+// }
+
+// .success-btn {
+//   @include button (green,25px 30px);
+// }
+// .danger-btn {
+//   @include button (red,35px 40px);
+// }

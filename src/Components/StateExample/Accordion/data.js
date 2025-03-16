@@ -1,7 +1,7 @@
-export const MainData = ["section1", "section2", "section3"];
+// export const MainData = ["React.js", "Next.js", "Node.js"];
 
-export const SubData = [
-  "this if first content",
-  "this is second content",
-  "this is third content",
-];
+// export const SubData = [
+//   " A JavaScript library for building interactive user interfaces using a component-based architecture.",
+//   "A React framework for production-level applications with features like server-side rendering and static site generation",
+//   "A runtime environment for executing JavaScript on the server, enabling scalable backend development",
+// ];

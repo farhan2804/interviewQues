@@ -1,37 +1,51 @@
-import React, { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+// import "./FetchStyle.css";
+// const FetchExample = () => {
+//   const [data, setData] = useState([]);
+//   //track the data being fetched or not
+//   const [isDataFetched, setIsDataFetched] = useState(false);
 
-const FetchExample = () => {
-  const [data, setData] = useState([]);
-  const [isDataFetched, setIsDataFetched] = useState(false);
-  useEffect(() => {
-    const fetchApi = async () => {
-      try {
-        const response = await fetch(
-          "https://jsonplaceholder.typicode.com/todos"
-        );
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.log("error fetching of the data");
-      } finally {
-        setIsDataFetched(true);
-      }
-    };
-    fetchApi();
-  }, []);
-  return (
-    <>
-      {isDataFetched ? (
-        data.map((val) => (
-          <div key={val.id}>
-            <h2>{val.id}. {val.title}</h2>
-          </div>
-        ))
-      ) : (
-        <p> Loading.....</p>
-      )}
-    </>
-  );
-};
+//   useEffect(() => {
+//     //data fetch logic
+//     const fetchData = async () => {
+//       try {
+//         const responseObj = await fetch("https://jsonplaceholder.typicode.com/todos");
+//         console.log(responseObj);
 
-export default FetchExample;
+//         const jsObject = await responseObj.json();
+//         console.log(jsObject);
+//       } 
+//       catch (err) {
+//    console.log("Error:", err);
+//       } 
+//        finally {
+        
+//       }
+
+
+      
+//     };
+//     fetchData();
+//   }, []);
+
+//   return (
+//     <div className="container">
+//       {/* {isDataFetched ? (
+//         error ? (
+//           <p> Error: {error}</p>
+//         ) : (
+//           data.map((val, id) => (
+//             <div key={id}>
+//               <h4>{id + 1}</h4>
+//               <h2>{val.name}</h2>
+//             </div>
+//           ))
+//         )
+//       ) : (
+//         <p> Loading.....</p>
+//       )} */}
+//     </div>
+//   );
+// };
+
+// export default FetchExample;

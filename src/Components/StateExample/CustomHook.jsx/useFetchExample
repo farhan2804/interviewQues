@@ -1,0 +1,46 @@
+// // import React from "react";
+// // import useFetch from "./useFetch";
+// // const Fetch = () => {
+// //   const { data, isDataFetched } = useFetch("https://fakestoreapi.com/products");
+// //   return (
+// //     <>
+// //       {isDataFetched ? (
+// //         data.map((item) => (
+// //           <ul key={item.id}>
+// //             <li>{item.category}</li>
+// //           </ul>
+// //         ))
+// //       ) : (
+// //         <p>Loading...</p>
+// //       )}
+// //     </>
+// //   );
+// // };
+
+// // export default Fetch;
+
+
+
+// import React, { useState, useEffect } from "react";
+
+// const useFetch = (url) => {
+//   const [data, setData] = useState([]);
+//   const [isDataFetched, setIsDataFetched] = useState(false);
+//   useEffect(() => {
+//     const fetchfunction = async () => {
+//       try {
+//         const responseData = await fetch(url);
+//         const jsonData = await responseData.json();
+//         setData(jsonData);
+//       } catch (err) {
+//         console.log("Error Fetching the Data", err);
+//       } finally {
+//         setIsDataFetched(true);
+//       }
+//     };
+//     fetchfunction();
+//   }, [url]);
+//   return { data, isDataFetched };
+// };
+
+// export default useFetch;

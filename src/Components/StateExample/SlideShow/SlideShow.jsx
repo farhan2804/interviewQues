@@ -1,35 +1,36 @@
-import React, { useState } from "react";
-import { data } from "./SlideShowData";
+import React,{useState} from 'react'
+import "./SlideShow.css";
+import {data} from './SlideShowData';
+
 const SlideShow = () => {
-  const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(0);
 
-  const prevDisabled = index === 0;
-  const nextDisabled = index === data.length - 1;
-  const restartDisabled = index === 0;
-  const handleNext = () => {
-    setIndex(index + 1);
-  };
-  const handlePrevious = () => {
-    setIndex(index - 1);
-  };
-  const handleRestart = () => {
-    setIndex(0);
-  };
+    const restartDisable = index === 0;
+    const previousDisbale = index === 0;
+    const nextDisable = index === data.length - 1; //5 -1 = 4
+
+
+    const handleRestart = () => {
+        setIndex(0);
+    }
+
+    const handlePrevious = () => {
+        setIndex(index - 1);
+    }
+    const handleNext = () => {
+        setIndex(index + 1);
+    }
   return (
-    <>
-      <h1>{data[index].name}</h1>
-      <h3>{data[index].kaam}</h3>
-      <button onClick={handleNext} disabled={nextDisabled}>
-        Next
-      </button>
-      <button onClick={handlePrevious} disabled={prevDisabled}>
-        Previous
-      </button>
-      <button onClick={handleRestart} disabled={restartDisabled}>
-        Restart
-      </button>
-    </>
-  );
-};
+   <div className='slideshowContainer'>
+    <h1>{data[index].name}</h1>
+    <p>{data[index].detail}</p>
+    <div className="buttonsContainer">
+        <button className="btn" onClick={handleRestart} disabled={restartDisable}>Restart</button>
+        <button className="btn" onClick={handlePrevious} disabled={previousDisbale}>Previous</button>
+        <button className="btn" onClick={handleNext} disabled = {nextDisable}>Next</button>
+    </div>
+   </div>
+  )
+}
 
-export default SlideShow;
+export default SlideShow

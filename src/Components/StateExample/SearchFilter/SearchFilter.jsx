@@ -1,38 +1,34 @@
-import React, { useState } from "react";
-import "./SearchFilter.css";
-const SearchFilter = () => {
-  const [searchedQuery, setSearchQuery] = useState("");
-  const items = [
-    "Apple",
-    "orange",
-    "Mango",
-    "Kiwi",
-    "Guava",
-    "Grapes",
-    "Papaya",
-    "lemon",
-  ];
-  const filteredItem = items.filter((item) =>
-    item.toLowerCase().includes(searchedQuery.toLowerCase())
-  );
+// import React, { useState } from "react";
+// import "./SearchFilter.css";
+// import fruits from "./items";
+// const SearchFilter = () => {
+//   const [searchedQuery, setSearchedQuery] = useState("");
+//   //  console.log(searchedQuery);
 
-  return (
-    <>
-      <div className="filterContainer">
-        <input
-          type="text"
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search Fruits"
-          value={searchedQuery}
-        />
-        <ul>
-          {filteredItem.map((item, id) => (
-            <li key={id}>{item}</li>
-          ))}
-        </ul>
-      </div>
-    </>
-  );
-};
+//   const filteredItems = fruits.filter((item) =>
+//     item.toLowerCase().includes(searchedQuery.toLowerCase())
+//   );
 
-export default SearchFilter;
+//   return (
+//     <div className="filterContainer">
+//       <h1>Fruit Search Filter</h1>
+
+//       <input
+//         type="text"
+//         onChange={(event) => setSearchedQuery(event.target.value)}
+//         value={searchedQuery}
+//         placeholder="Type to Search Fruits.."
+//       />
+
+//       <ul>
+//         {filteredItems.length > 0 ? (
+//           filteredItems.map((item, id) => <li key={id}> {item}</li>)
+//         ) : (
+//           <li className="noResults">No Fruits Found</li>
+//         )}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default SearchFilter;

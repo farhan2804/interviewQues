@@ -1,18 +1,25 @@
 export const data = [
   {
-    name: "Virat Kohli",
-    kaam: "Match jitwaana Team ko",
+    name: "React",
+    detail:
+      "A JavaScript library for building user interfaces with reusable components.",
   },
   {
-    name: "Babar Azam",
-    kaam: "Team ko Dhona ",
+    name: "Next.js",
+    detail: "A React-based framework for building server-side rendered.",
   },
   {
-    name: "Bumrah",
-    kaam: "Batsman ko nachaana",
+    name: "Java",
+    detail:
+      "A versatile, object-oriented programming language used for web & mobile App's.",
   },
   {
-    name: "Shaheen",
-    kaam: "Sasur Jaisa paitra dikhaana",
+    name: "JavaScript",
+    detail:
+      "A dynamic programming language essential for interactive web development.",
+  },
+  {
+    name: "TypeScript",
+    detail: "A strongly-typed superset of JavaScript that adds static typing.",
   },
 ];
